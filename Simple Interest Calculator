@@ -1,0 +1,12 @@
+#Simple Interest Calculator
+
+P = float(input("Enter Principal Amount: "))
+N = float(input("Enter Time in Years: "))
+R = float(input("Enter Rate of Interest: "))
+
+Simple_Interest = (P * N * R) / 100
+
+Total_Amount = P+Simple_Interest
+
+print(f"Simple Interest: {Simple_Interest:.2f}")
+print(f"Total Amount: {Total_Amount:.2f}")
