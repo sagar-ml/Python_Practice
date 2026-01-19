@@ -1,0 +1,18 @@
+# Numeric Analysis
+
+temperature_list =[23.1, 30.5, 34.2, 28.9, 21.0, 36.7, 25.4, 32.8, 29.6, 24.5]
+
+print("Temperatures (°C):", [f"{t:.2f}" for t in temperature_list])
+
+min_temp = min(temperature_list)
+max_temp = max(temperature_list)
+average_temp = sum(temperature_list)/len(temperature_list)
+
+print(f"Minimum Temperature Valve : {min_temp: .2f}°C")
+print(f"Maximum Temeprature Value : {max_temp: .2f}°C")
+print(f"Average Temperature Value : {average_temp: .2f}°C")
+
+above_avg = [t for t in temperature_list if t > average_temp]
+
+print("temperature_list > average:", [round(t, 2) for t in above_avg])
+print("Count above average:", len(above_avg))
